@@ -39,7 +39,7 @@ public class PatientProfileController extends HttpServlet {
         User user = (User) session.getAttribute("userObj");
 
         if (user == null || !"patient".equals(user.getRole())) {
-            response.sendRedirect(request.getContextPath() + "/login"); //login
+            response.sendRedirect(request.getContextPath() + "/login"); //login 
             return;
         }
 
