@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Hospital Management System</display-name>
+
+    <!-- ══════════════════════════════════════════════════════
+         Session Configuration
+         - timeout  : 60 minutes of inactivity before expiry
+         - HttpOnly : JS cannot read the JSESSIONID cookie
+         - SameSite : prevents CSRF via cross-site requests
+    ══════════════════════════════════════════════════════ -->
+    <session-config>
+        <session-timeout>60</session-timeout>
+        <cookie-config>
+            <http-only>true</http-only>
+            <same-site>Strict</same-site>
+        </cookie-config>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+
+    <!-- ══════════════════════════════════════════════════════
+         Welcome page
+    ══════════════════════════════════════════════════════ -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- ══════════════════════════════════════════════════════
+         Legacy servlet (kept for compatibility)
+    ══════════════════════════════════════════════════════ -->
+    <servlet>
+        <servlet-name>AddPatientServlet</servlet-name>
+        <servlet-class>com.hms.controller.AddPatientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPatientServlet</servlet-name>
+        <url-pattern>/AddPatientServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

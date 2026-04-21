@@ -1,0 +1,759 @@
+/* ================= GLOBAL ================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d6efd;
+    color: white;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: white;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo-box {
+    background: #0d6efd;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+}
+
+.nav-links a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.register-btn {
+    background: #0d6efd;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+/* ================= HERO ================= */
+
+/* ================= STATS ================= */
+
+.stats {
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 60px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    min-width: 180px;
+}
+
+.stat-icon {
+    font-size: 40px;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.stat-box h2 {
+    margin: 5px 0;
+    font-size: 28px;
+}
+
+/* ================= SERVICES TITLE ================= */
+
+.services-title {
+    background: #f4f6f9;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+.services-title h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.services-title p {
+    color: #555;
+}
+
+/* ================= SERVICES ================= */
+
+.services {
+    background: #f4f6f9;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 60px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= ICON CIRCLES ================= */
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.cardio {
+    background: #e7f1ff;
+    color: #0d6efd;
+}
+
+.neuro {
+    background: #e9f9ee;
+    color: #28a745;
+}
+
+.pediatric {
+    background: #f3e8ff;
+    color: #6f42c1;
+}
+
+/* ================= TEXT ================= */
+
+.service-card h2 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.service-card a {
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 📱 Tablets */
+@media (max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+    }
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 32px;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .stats,
+    .services {
+        padding: 30px 20px;
+    }
+}
+
+/* ✅ HOW IT WORKS SECTION */
+
+.how-it-works {
+    background: white;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.works-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0b132a;
+}
+
+.works-header p {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.works-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.work-step {
+    width: 30%;
+}
+
+.step-circle {
+    width: 70px;
+    height: 70px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto 15px;
+}
+
+.work-step h3 {
+    margin: 10px 0;
+    color: #0b132a;
+}
+
+.work-step p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ✅ RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .works-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-step {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .step-circle {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .works-header h1 {
+        font-size: 26px;
+    }
+}
+
+
+/* ================= CTA BANNER ================= */
+
+.cta-banner {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cta-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.cta-banner h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cta-banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Light Button (white button) */
+.light-btn {
+    background: white;
+    color: #0d6efd;
+    padding: 12px 35px;
+    border-radius: 25px;
+}
+
+.light-btn:hover {
+    background: #f2f2f2;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .cta-banner {
+        padding: 60px 20px;
+    }
+
+    .cta-banner h1 {
+        font-size: 28px;
+    }
+
+    .cta-banner p {
+        font-size: 16px;
+    }
+
+    .cta-icon {
+        font-size: 42px;
+    }
+}
+
+
+
+/* Input Fields */
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b132a;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+/* Full Width Button */
+
+.full-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Demo Credentials */
+
+.demo-credentials {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #555;
+}
+
+.demo-credentials p {
+    margin-bottom: 4px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 576px) {
+
+    .auth-card {
+        padding: 30px 20px;
+    }
+}
+/* ================= ANIMATIONS ================= */
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.fade-in-delay {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ================= HOVER CARDS ================= */
+
+.hover-card {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 8%;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #cbd5f5;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    display: block;
+    text-decoration: none;
+    color: #cbd5f5;
+    margin-bottom: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons span {
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons span:hover {
+    transform: scale(1.2);
+}
+
+/* Bottom Bar */
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+/* ================= ABOUT PAGE ================= */
+
+.about-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: black;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 1000px;
+    hight:60%;
+    max-hight:200px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.about-card {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+}
+
+.about-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+    .about-header h1 {
+        font-size: 30px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}
+/* ================= ABOUT VALUES ================= */
+
+.about-values {
+    background: #f4f6f9;
+    color: black;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+/* Mission & Vision Layout */
+
+.mission-vision {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    flex: 1;
+    min-width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.icon-circle {
+    width: 55px;
+    height: 55px;
+    background: #e7f1ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* Values */
+
+.values-title {
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+.values-sub{
+	color:gray ;
+    font-size: 24px;
+}
+.values-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: flex;
+    justify-content: center;
+}
+
+.value-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 260px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.value-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+    .info-card {
+        text-align: center;
+    }
+}
+/* ===== OUR JOURNEY / TIMELINE ===== */
+
+.journey-section {
+    padding: 80px 20px;
+    background: #f4f6f9;
+}
+
+.journey-container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.journey-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #0d47a1;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-year {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1976d2;
+    min-width: 70px;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #222;
+}
+
+.timeline-content p {
+    margin-top: 5px;
+    color: #555;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .timeline-year {
+        font-size: 18px;
+    }
+}
